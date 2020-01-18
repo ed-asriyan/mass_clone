@@ -63,6 +63,7 @@ else
 	cd ../${identifier}
 
 	while read -r url; do
+		echo $url
 		dir=$(basename ${url})
 		dir=${dir//.git}
 		if [ -d ${dir} ]; then
@@ -70,5 +71,6 @@ else
 		else
 			git clone ${url}
 		fi
+		echo
 	done <<< "$justURLs"
 fi
