@@ -18,8 +18,7 @@ else
 
 	#edit these variables to your defaults
 	organization="Organization"
-	username="username"
 	protocol="ssh"
 
-	./clone_all.sh ${organization} ${assignment} ${username} ${protocol}
+	./clone_all.sh ${organization} ${assignment} ${protocol}
 fi

@@ -1,9 +1,11 @@
 # mass_clone
+**This fork does not require github credentials.**
+
 This is a shell script that will clone multiple repositories.  The intended usage is for GitHub Classroom to be able to clone all repos of a certain assignment.  The script will create a folder based on the identifier(assignment name) then make folders for each repo then clone.  Uses GitHub api v3, curl 7.49.1 and grep 2.5.1
 
 # clone_all.sh
 
-This script takes 4 arguments in order to clone repos based on organization(github classroom), a unique identifier(assignment), username, and protocol.
+This script takes 3 arguments in order to clone repos based on organization(github classroom), a unique identifier(assignment), and protocol.
 
 This script will make a new folder based on the unique identifier, then clone each to their own subfolder.
 
@@ -23,6 +25,6 @@ Used the commit message "Graded", but can be changed.
 
 # clone_all_helper.sh
 
-This script runs clone_all.sh with three arguments as defaults, Organization, username, and protocol
+This script runs clone_all.sh with three arguments as defaults, Organization, and protocol
 
 The script takes one argument, the unique identifier.
